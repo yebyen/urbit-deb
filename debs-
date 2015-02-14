@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+git pull \
+  && make clean distclean \
+  && make breach \
+  ;  \
+  git add urbit_0.2* \
+  && sudo dpkg -i urbit_0.2*.deb #\
+#  && git push \
+#  && \
+#  git reset --hard

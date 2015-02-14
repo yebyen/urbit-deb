@@ -1,0 +1,53 @@
+From f1efaeda58252b4ffb7533d6a01825f80543e053 Mon Sep 17 00:00:00 2001
+From: Kingdon <yebyen@gmail.com>
+Date: Wed, 6 May 2015 21:22:37 -0400
+Subject: [PATCH] necessary
+
+---
+ urb/zod/base/pub/doc/arvo/util.md    | 2 +-
+ urb/zod/base/pub/doc/guide.md        | 2 +-
+ urb/zod/base/pub/doc/guide/c-gall.md | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/urb/zod/base/pub/doc/arvo/util.md b/urb/zod/base/pub/doc/arvo/util.md
+index 2e4f764..d536070 100644
+--- a/urb/zod/base/pub/doc/arvo/util.md
++++ b/urb/zod/base/pub/doc/arvo/util.md
+@@ -15,7 +15,7 @@ You can find them in `/main/app`.
+ 
+ `~zod/try=> :begin [~ship-name [~valid-ticket-for-ship]]`
+ 
+-Start a ship. `:begin` collects all of the necesarry information to
++Start a ship. `:begin` collects all of the necessary information to
+ start an Urbit ship. Takes an option `[~ship-name]` or
+ `[~ship-name [~valid-ticket-for-ship]]` pair.
+ 
+diff --git a/urb/zod/base/pub/doc/guide.md b/urb/zod/base/pub/doc/guide.md
+index 961c8fb..7a3d778 100644
+--- a/urb/zod/base/pub/doc/guide.md
++++ b/urb/zod/base/pub/doc/guide.md
+@@ -5,7 +5,7 @@ Guides
+ 
+ These guides are designed to get you oriented in urbit.
+ 
+-Each one covers a specific topic. Although it's not necesarry to follow
++Each one covers a specific topic. Although it's not necessary to follow
+ them in order, they do get increasingly complex.
+ 
+ </div>
+diff --git a/urb/zod/base/pub/doc/guide/c-gall.md b/urb/zod/base/pub/doc/guide/c-gall.md
+index bd0b354..899c2eb 100644
+--- a/urb/zod/base/pub/doc/guide/c-gall.md
++++ b/urb/zod/base/pub/doc/guide/c-gall.md
+@@ -3,7 +3,7 @@ vane. To show off how we store and distribute data in Urbit we're going
+ to examine a simple webapp. Some of the material here expects that you
+ have looked over the [`%ford` guide](). If you haven't, it's a good idea
+ to start there. There's also more information in the [`%gall`
+-overview]() and [`%gall` commentary]() but it's not necesarry that you
++overview]() and [`%gall` commentary]() but it's not necessary that you
+ read those before going forward.
+ 
+ One important thing to keep in mind is that `%gall` services aren't
+-- 
+2.1.4
+

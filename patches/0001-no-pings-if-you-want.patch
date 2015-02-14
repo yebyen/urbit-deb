@@ -1,0 +1,27 @@
+From 722d89b0be6d7ba83aa246fc8f2d8ab0b9fa3a2b Mon Sep 17 00:00:00 2001
+From: Kingdon Barrett <kbarrett@metrixmatrix.com>
+Date: Tue, 29 Oct 2013 19:01:54 -0400
+Subject: [PATCH] no pings if you want
+
+say [~ fox] instead of
+---
+ urb/zod/arvo/ames.hoon | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/urb/zod/arvo/ames.hoon b/urb/zod/arvo/ames.hoon
+index 453a0dc..8e00d6a 100644
+--- a/urb/zod/arvo/ames.hoon
++++ b/urb/zod/arvo/ames.hoon
+@@ -1524,7 +1524,8 @@
+         ==
+       ::
+           %pi
+-        $(bon [%wine p.bon " sent a ping"])             ::  ping
++          :: [~ fox]
++          $(bon [%wine p.bon " sent a ping"])             ::  ping
+       ::
+           %ta
+         =+  gox=((hard ,[p=@p q=@pG r=gens s=pass]) r.bon)
+-- 
+2.1.4
+

@@ -1,0 +1,38 @@
+From 59c942c6cedcb6ab7b59804816279c72973e4770 Mon Sep 17 00:00:00 2001
+From: Kingdon <yebyen@gmail.com>
+Date: Tue, 12 May 2015 18:28:07 -0400
+Subject: [PATCH 1/2] armhf: nosse, nofastmath
+
+---
+ outside/scrypt/Makefile                                       | 4 ++--
+ outside/scrypt/{crypto_scrypt-sse.c => crypto_scrypt-nosse.c} | 0
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+ rename outside/scrypt/{crypto_scrypt-sse.c => crypto_scrypt-nosse.c} (100%)
+
+diff --git a/outside/scrypt/Makefile b/outside/scrypt/Makefile
+index f3ac5ac..80bd8c5 100644
+--- a/outside/scrypt/Makefile
++++ b/outside/scrypt/Makefile
+@@ -1,13 +1,13 @@
+ default: all
+ 
+ CC?=gcc
+-CFLAGS?=-O2 -msse3 -ffast-math \
++CFLAGS?=-O2 \
+ 	-Wall -g -D_FORTIFY_SOURCE=2 -fPIC
+ CFLAGS_EXTRA?=-Wl,-rpath=.
+ 
+ all: scrypt.a
+ 
+-OBJS= crypto_scrypt-sse.o sha256.o
++OBJS= crypto_scrypt-nosse.o sha256.o
+ 
+ scrypt.a: $(OBJS)
+ 	ar rcs scrypt.a  $(OBJS)
+diff --git a/outside/scrypt/crypto_scrypt-sse.c b/outside/scrypt/crypto_scrypt-nosse.c
+similarity index 100%
+rename from outside/scrypt/crypto_scrypt-sse.c
+rename to outside/scrypt/crypto_scrypt-nosse.c
+-- 
+1.9.1
+
