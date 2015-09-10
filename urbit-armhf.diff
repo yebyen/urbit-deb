@@ -1,5 +1,5 @@
 diff --git a/Makefile b/Makefile
-index a148ff2..4235563 100644
+index 014516e..e2d3e12 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -35,7 +35,7 @@ BIN=bin
@@ -13,7 +13,7 @@ index a148ff2..4235563 100644
  CXX=g++
 @@ -73,7 +73,7 @@ MDEFINES=-DU3_OS_$(OS) -DU3_OS_ENDIAN_$(ENDIAN) -D U3_LIB=\"$(LIB)\"
  # NOTFORCHECKIN - restore -O3
- # 	-DGHETTO
+ # 	-DGHETTO \
  #   -DHUSH
 -CFLAGS= $(COSFLAGS) -O3 -msse3 -ffast-math \
 +CFLAGS= $(COSFLAGS) -O3 -ffast-math \

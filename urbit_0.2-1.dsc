@@ -10,11 +10,11 @@ Build-Depends: debhelper (>= 8.0.0), libssl-dev, libncurses5-dev, libgmp-dev, li
 Package-List:
  urbit deb unknown extra arch=any
 Checksums-Sha1:
- 685befaac794655c54103e9623fcf1f3623dbaa3 3376416 urbit_0.2.orig.tar.xz
- aaecf8297f4f2acdc3fb78b6d8977100b16d4f5b 1120 urbit_0.2-1.debian.tar.xz
+ e94a9f7c96d8591bce7366ede95d81020fef3835 3385144 urbit_0.2.orig.tar.xz
+ f6e15d435b4496f3749ab39d45f1ee8b9cf5cee2 1120 urbit_0.2-1.debian.tar.xz
 Checksums-Sha256:
- dbb0a0e76d0986938328918804e460bc6d11fda36f57ac28ae82947b48516141 3376416 urbit_0.2.orig.tar.xz
- 203242d2c16176821d9e8eeaddb9ab80b928c2a802119f75cdf96d29ebd42ded 1120 urbit_0.2-1.debian.tar.xz
+ d16b8b50b5cee6da3f5cc80a6de1cf9c9f05afaae6263447874383e380dfb00a 3385144 urbit_0.2.orig.tar.xz
+ 19d3f737c737649eb35337e94269d0d559856e384be46ca3124ce05ce32afaa4 1120 urbit_0.2-1.debian.tar.xz
 Files:
- f18c8b5cfb32dea28979720270285b52 3376416 urbit_0.2.orig.tar.xz
- c1eb89fd0b8496227d035827d115dab0 1120 urbit_0.2-1.debian.tar.xz
+ 15eafb4bd286bc684dfd505da3e11aaa 3385144 urbit_0.2.orig.tar.xz
+ 856ae046c29c36baa45d35344e0bc75c 1120 urbit_0.2-1.debian.tar.xz
