@@ -1,5 +1,5 @@
 diff --git a/Makefile b/Makefile
-index 014516e..e2d3e12 100644
+index a80d7bf..b35b79a 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -35,7 +35,7 @@ BIN=bin
@@ -11,23 +11,6 @@ index 014516e..e2d3e12 100644
  ifneq ($(UNAME),FreeBSD)
  CC=gcc
  CXX=g++
-@@ -73,7 +73,7 @@ MDEFINES=-DU3_OS_$(OS) -DU3_OS_ENDIAN_$(ENDIAN) -D U3_LIB=\"$(LIB)\"
- # NOTFORCHECKIN - restore -O3
- # 	-DGHETTO \
- #   -DHUSH
--CFLAGS= $(COSFLAGS) -O3 -msse3 -ffast-math \
-+CFLAGS= $(COSFLAGS) -O3 -ffast-math \
- 	-funsigned-char \
- 	-I/usr/local/include \
- 	-I/opt/local/include \
-@@ -473,6 +473,7 @@ debinstall:
- 
- clean:
- 	$(RM) $(VERE_OFILES) $(BIN)/urbit urbit.pkg $(VERE_DFILES)
-+	$(RM) debian/files debian/urbit*
- 
- # 'make distclean all -jn' ∀ n>1 still does not work because it is possible
- # Make will attempt to build urbit while it is also cleaning urbit..
 diff --git a/include/noun/allocate.h b/include/noun/allocate.h
 index 4ad1e4c..451eef5 100644
 --- a/include/noun/allocate.h
@@ -41,15 +24,3 @@ index 4ad1e4c..451eef5 100644
  
      /* u3a_page: number of bits in word-addressed page.  12 == 16Kbyte page.
      */
-diff --git a/outside/scrypt/crypto_scrypt.h b/outside/scrypt/crypto_scrypt.h
-index e2638c5..39cad5c 100644
---- a/outside/scrypt/crypto_scrypt.h
-+++ b/outside/scrypt/crypto_scrypt.h
-@@ -30,7 +30,6 @@
- #define _CRYPTO_SCRYPT_H_
- 
- #include <stdint.h>
--#include <emmintrin.h>
- 
- void smix(uint8_t *, size_t, uint64_t, uint32_t *, uint32_t *);
- void PBKDF2_SHA256(const uint8_t *, size_t, const uint8_t *, size_t,
