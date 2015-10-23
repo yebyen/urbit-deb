@@ -1,0 +1,6 @@
+[submodule "del"]
+    path = del
+    url = https://github.com/yebyen/-del.git
+[submodule "urbit"]
+    path = urbit
+    url = https://github.com/urbit/urbit.git
