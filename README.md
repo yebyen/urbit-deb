@@ -19,11 +19,14 @@ be helpful as well.
 
 From a freshly installed (tested on Jessie) Debian or Ubuntu:
 
-    ARCH= #amd64,i386,armhf
-    git clone https://github.com/urbit/urbit urbit
+    sudo apt-get install git-core
+    git clone --recursive --depth 1 https://github.com/yebyen/urbit-deb.git urbit
+    pushd urbit
+    ARCH= #amd64,i386,armhf  # Set your ARCH here... TODO: rename patches according to output of `arch`
     pushd urbit
     patch -p1 < ../urbit-${ARCH}.diff
     popd
-    sudo apt-get install debhelper libssl-dev libncurses5-dev libgmp-dev libsigsegv-dev ragel libtool autoconf cmake re2c
+    sudo apt-get install -y debhelper libssl-dev libncurses5-dev libgmp-dev libsigsegv-dev ragel libtool autoconf cmake re2c
     make clean distclean
     make builddeb
+    sudo dpkg -i urbit_*.deb
