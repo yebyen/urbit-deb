@@ -17,16 +17,22 @@ The build scripts I use for the debs are in debs-{ARCH} for {amd64,i386,armhf}
 You may find the patches included that I have applied for each architecture to
 be helpful as well.
 
-From a freshly installed (tested on Jessie) Debian or Ubuntu:
+From a freshly installed (tested on Jessie) Debian or Ubuntu, copying this mess
+into your terminal should get you set up with a packaged installation of urbit:
 
+    ARCH=`arch`
+    REPO=https://github.com/yebyen/urbit-deb.git
     sudo apt-get install git-core
-    git clone --recursive --depth 1 https://github.com/yebyen/urbit-deb.git urbit
-    pushd urbit
-    ARCH= #amd64,i386,armhf  # Set your ARCH here... TODO: rename patches according to output of `arch`
-    pushd urbit
+    git clone --recursive --depth 1 $REPO urbit
+    pushd urbit; pushd urbit
     patch -p1 < ../urbit-${ARCH}.diff
     popd
-    sudo apt-get install -y debhelper libssl-dev libncurses5-dev libgmp-dev libsigsegv-dev ragel libtool autoconf cmake re2c
+    sudo apt-get install -y debhelper libssl-dev \
+      libncurses5-dev libgmp-dev libsigsegv-dev \
+      ragel libtool autoconf cmake re2c
     make clean distclean
     make builddeb
     sudo dpkg -i urbit_*.deb
+    popd
+    echo "Package installed!"
+    echo "Next, you should run:  urbit -c pier"
