@@ -1,5 +1,5 @@
 diff --git a/Makefile b/Makefile
-index 7160cb2..07f695c 100644
+index 9d48bff..e1810af 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -35,7 +35,7 @@ BIN=bin
@@ -11,16 +11,18 @@ index 7160cb2..07f695c 100644
  ifneq ($(UNAME),FreeBSD)
  CC=gcc
  CXX=g++
-@@ -462,7 +462,7 @@ debinstall:
+@@ -483,8 +483,8 @@ debinstall:
+ 	cp -R urb/zod $(DESTDIR)/usr/share/urb
  
  clean:
- 	$(RM) $(VERE_OFILES) $(BIN)/urbit urbit.pkg $(VERE_DFILES)
+-	$(RM) $(VERE_OFILES) $(BIN)/urbit urbit.pkg $(VERE_DFILES) $(TAGS)
 -	$(RM) -r debian/files debian/urbit*
++	$(RM) $(VERE_OFILES) $(BIN)/urbit urbit.pkg $(VERE_DFILES)
 +	$(RM) debian/files debian/urbit*
  
  # 'make distclean all -jn' ∀ n>1 still does not work because it is possible
  # Make will attempt to build urbit while it is also cleaning urbit..
-@@ -473,5 +473,6 @@ distclean: clean $(LIBUV_MAKEFILE)
+@@ -495,5 +495,6 @@ distclean: clean $(LIBUV_MAKEFILE)
  	$(MAKE) -C outside/anachronism clean
  	$(MAKE) -C outside/scrypt clean
  	$(MAKE) -C outside/softfloat-3/build/Linux-386-GCC clean
