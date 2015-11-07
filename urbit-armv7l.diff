@@ -1,5 +1,5 @@
 diff --git a/Makefile b/Makefile
-index a80d7bf..b35b79a 100644
+index 9d48bff..7516f35 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -35,7 +35,7 @@ BIN=bin
@@ -24,3 +24,13 @@ index 4ad1e4c..451eef5 100644
  
      /* u3a_page: number of bits in word-addressed page.  12 == 16Kbyte page.
      */
+diff --git a/outside/commonmark/man/man3/cmark.3 b/outside/commonmark/man/man3/cmark.3
+index e5b55fd..3eeb928 100644
+--- a/outside/commonmark/man/man3/cmark.3
++++ b/outside/commonmark/man/man3/cmark.3
+@@ -1,4 +1,4 @@
+-.TH cmark 3 "December 05, 2014" "LOCAL" "Library Functions Manual"
++.TH cmark 3 "November 07, 2015" "LOCAL" "Library Functions Manual"
+ .SH NAME
+ 
+ .B cmark
