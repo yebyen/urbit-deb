@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 21 May 2014 15:12:49 -0700
+Source: urbit
+Binary: urbit
+Architecture: source armhf
+Version: 0.2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Urbit <urbit@urbit.org>
+Changed-By: Urbit <urbit@urbit.org>
+Description:
+ urbit      - Urbit
+Changes:
+ urbit (0.2-1) unstable; urgency=low
+ .
+   * Initial release
+Checksums-Sha1:
+ cdc2b18a3433b6faf2719f0be1104f880f59a633 852 urbit_0.2-1.dsc
+ 0b443f3d9aa4934749bebac951033945426e8f66 3838640 urbit_0.2.orig.tar.xz
+ 22dc30a59f107116fe0a1dc0dc5f57845e40b98e 1116 urbit_0.2-1.debian.tar.xz
+ a567bfb394a7a0c077ad00b06c0337929f82cd43 2170848 urbit_0.2-1_armhf.deb
+Checksums-Sha256:
+ c9eb6ae5c000e759629a7564a26ae4c031a6ffaf4beb49a02a933a07e0b6a9d2 852 urbit_0.2-1.dsc
+ 1279528fe8f02457433742ab5080441740b1325cb7813688c1a64c9a4351ee96 3838640 urbit_0.2.orig.tar.xz
+ 6fb6d5d21ec250fe163b05af382435aae8084234bf2eaaddf2e0a2a8290f3885 1116 urbit_0.2-1.debian.tar.xz
+ 150c9ec3f401b4a0595688ce2cad85cb8307888befe1f3f43b786cd59ab4165f 2170848 urbit_0.2-1_armhf.deb
+Files:
+ f4b1bdc0dd1d04d088e0b5902e7b2ec4 852 unknown extra urbit_0.2-1.dsc
+ 2e53f278442a598e43ad2879acb488a5 3838640 unknown extra urbit_0.2.orig.tar.xz
+ 6b918b76270886ab914cdb499d7e4502 1116 unknown extra urbit_0.2-1.debian.tar.xz
+ 050ed152e5f89f99e245f6594b886afb 2170848 unknown extra urbit_0.2-1_armhf.deb
