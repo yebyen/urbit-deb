@@ -26,6 +26,7 @@ into your terminal should get you set up with a packaged installation of urbit:
     git clone --recursive --depth 1 $REPO urbit
     pushd urbit; pushd urbit
     curl -o urbit.pill http://bootstrap.urbit.org/latest.pill
+    git submodule add -f https://github.com/urbit/arvo.git arvo
     patch -p1 < ../urbit-${ARCH}.diff
     popd
     sudo apt-get install -y debhelper libssl-dev \
