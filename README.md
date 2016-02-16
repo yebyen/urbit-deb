@@ -22,6 +22,7 @@ into your terminal should get you set up with a packaged installation of urbit:
 
     ARCH=`arch`
     REPO=https://github.com/yebyen/urbit-deb.git
+    sudo apt-get update
     sudo apt-get install git-core
     git clone --recursive --depth 1 $REPO urbit
     pushd urbit; pushd urbit
