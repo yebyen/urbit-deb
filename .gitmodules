@@ -4,3 +4,6 @@
 [submodule "urbit"]
     path = urbit
     url = https://github.com/urbit/urbit.git
+[submodule "arvo"]
+    path = urbit/arvo
+    url = https://github.com/urbit/arvo.git
