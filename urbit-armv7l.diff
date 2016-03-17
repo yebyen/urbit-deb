@@ -1,5 +1,5 @@
 diff --git a/Makefile b/Makefile
-index bffa4f1..f245be0 100644
+index 83ea4eb..6df19ad 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -49,7 +49,7 @@ ifneq (,$(wildcard /usr/local/opt/openssl/.))
@@ -11,7 +11,7 @@ index bffa4f1..f245be0 100644
  ifneq ($(UNAME),FreeBSD)
  CC=gcc
  CXX=g++
-@@ -484,8 +484,10 @@ osxpackage:
+@@ -485,8 +485,10 @@ osxpackage:
  	$(MAKE) $(BIN)/urbit LIB=/usr/local/lib/urb STATIC=yes
  	mkdir -p inst/usr/local/lib/urb inst/usr/local/bin
  	cp $(BIN)/urbit inst/usr/local/bin
@@ -24,7 +24,7 @@ index bffa4f1..f245be0 100644
  	pkgbuild --root inst --identifier org.urbit.urbit --version 0.2 urbit.pkg
  
  debbuild:
-@@ -494,8 +496,10 @@ debbuild:
+@@ -495,8 +497,10 @@ debbuild:
  debinstall:
  	mkdir -p $(DESTDIR)/usr/bin $(DESTDIR)/usr/share/urb
  	install -m755 $(BIN)/urbit $(DESTDIR)/usr/bin

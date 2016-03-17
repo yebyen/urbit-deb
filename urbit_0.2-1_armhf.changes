@@ -15,17 +15,17 @@ Changes:
  .
    * Initial release
 Checksums-Sha1:
- 94dfc426987ac7d21a555cee51d1f11c020ef260 852 urbit_0.2-1.dsc
- 360cfc888398c1099aa8ccf71e4594f8cb2a1b00 3265872 urbit_0.2.orig.tar.xz
- 2c38ef4343d241e00092d3f8cb58fdc29d6169e9 1116 urbit_0.2-1.debian.tar.xz
- 9c565848f4f9ef4843835e357e66e3e10af39982 1537506 urbit_0.2-1_armhf.deb
+ c0a6bee10d67a597cb0f5337bf9dcd39794270a2 852 urbit_0.2-1.dsc
+ 05ed45836c71343cfc6293f143cc9f580e869103 7304368 urbit_0.2.orig.tar.xz
+ 3962007ebc2e2f6781bd5707039d3a7f57c0bd69 1120 urbit_0.2-1.debian.tar.xz
+ 5e640ae2daa0318fe9100f252868a55d7b035e0c 17395124 urbit_0.2-1_armhf.deb
 Checksums-Sha256:
- d4329f35be92d47da181de1f0e25753b74e0042db89e86d575eea5ef01a7047f 852 urbit_0.2-1.dsc
- 13bf92d1eb92de345aa7b5268526a8b6ab7ee04d82b5f23ad5bc0a1db77f270b 3265872 urbit_0.2.orig.tar.xz
- 3d178ae209faacf6b510fe131c149c6f8487d09b4cc723767131b8cc91953523 1116 urbit_0.2-1.debian.tar.xz
- 1b95113f6025ab24c719a833b0c72ae52acb6edf912f448ac4555ef2cce1d59d 1537506 urbit_0.2-1_armhf.deb
+ 03daa8033a34c4f1baab358bdce20298c124b49b83887253a880a7c82954a544 852 urbit_0.2-1.dsc
+ 9d7ec2d1a2960868b817019496f3e3e8a1693d09f71b97da395ff1a4c4a3654c 7304368 urbit_0.2.orig.tar.xz
+ 0709f1f7a09ff89659690a026dfc91d7bcfdd70f28e03628ebf27ec3b7a3f37a 1120 urbit_0.2-1.debian.tar.xz
+ bd4c29fc761924a029af272f3b17da18da352084976e0e38c356f23b4a7126ac 17395124 urbit_0.2-1_armhf.deb
 Files:
- e889916e883e17a21334a37864b8674b 852 unknown extra urbit_0.2-1.dsc
- 3bec1ea1d16ec5fa7ef7fe48481aae4c 3265872 unknown extra urbit_0.2.orig.tar.xz
- 06cc4f9452d118efb50f7c256d27d172 1116 unknown extra urbit_0.2-1.debian.tar.xz
- 4245f351b75cb2aa0e7ad81525eac2f0 1537506 unknown extra urbit_0.2-1_armhf.deb
+ 2c8e4f7cd0530881ef728ba188a557a0 852 unknown extra urbit_0.2-1.dsc
+ fba03410339991fc9dc1688065bf6d1d 7304368 unknown extra urbit_0.2.orig.tar.xz
+ 879e65e21268c47356771c2bf7c13c14 1120 unknown extra urbit_0.2-1.debian.tar.xz
+ ad845c15118541cd0464fd6a1d68b8fb 17395124 unknown extra urbit_0.2-1_armhf.deb
