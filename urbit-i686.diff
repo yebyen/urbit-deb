@@ -1,5 +1,5 @@
 diff --git a/Makefile b/Makefile
-index 83ea4eb..894be2c 100644
+index 5fe9ff4..77fa1aa 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -49,7 +49,7 @@ ifneq (,$(wildcard /usr/local/opt/openssl/.))
@@ -11,64 +11,7 @@ index 83ea4eb..894be2c 100644
  ifneq ($(UNAME),FreeBSD)
  CC=gcc
  CXX=g++
-@@ -485,8 +485,10 @@ osxpackage:
- 	$(MAKE) $(BIN)/urbit LIB=/usr/local/lib/urb STATIC=yes
- 	mkdir -p inst/usr/local/lib/urb inst/usr/local/bin
- 	cp $(BIN)/urbit inst/usr/local/bin
--	cp urb/urbit.pill inst/usr/local/lib/urb
--	cp -R urb/zod inst/usr/local/lib/urb
-+	cp urbit.pill inst/usr/local/lib/urb
-+	#cp -R urb/zod inst/usr/local/lib/urb
-+	mkdir -p inst/usr/local/lib/urb
-+	cp -R arvo inst/usr/local/lib/urb/arvo
- 	pkgbuild --root inst --identifier org.urbit.urbit --version 0.2 urbit.pkg
- 
- debbuild:
-@@ -495,12 +497,14 @@ debbuild:
- debinstall:
- 	mkdir -p $(DESTDIR)/usr/bin $(DESTDIR)/usr/share/urb
- 	install -m755 $(BIN)/urbit $(DESTDIR)/usr/bin
--	cp urb/urbit.pill $(DESTDIR)/usr/share/urb
--	cp -R urb/zod $(DESTDIR)/usr/share/urb
-+	cp urbit.pill $(DESTDIR)/usr/share/urb
-+	#cp -R urb/zod $(DESTDIR)/usr/share/urb
-+	mkdir -p $(DESTDIR)/usr/share/urb
-+	cp -R arvo $(DESTDIR)/usr/share/urb/arvo
- 
- clean:
- 	$(RM) $(VERE_OFILES) $(BIN)/urbit urbit.pkg $(VERE_DFILES) $(TAGS)
--	$(RM) -r debian/files debian/urbit*
-+	$(RM) -r debian/files debian/urbit* debian/.debhelper debian/debhelper-build-stamp
- 
- # 'make distclean all -jn' ∀ n>1 still does not work because it is possible
- # Make will attempt to build urbit while it is also cleaning urbit..
-diff --git a/include/noun/allocate.h b/include/noun/allocate.h
-index 7ab6b21..4a1310e 100644
---- a/include/noun/allocate.h
-+++ b/include/noun/allocate.h
-@@ -23,7 +23,7 @@
-   **/
-     /* u3a_bits: number of bits in word-addressed pointer.  29 == 2GB.
-     */
--#     define u3a_bits  29
-+#     define u3a_bits  28
- 
-     /* u3a_page: number of bits in word-addressed page.  12 == 16Kbyte page.
-     */
-diff --git a/Makefile b/Makefile
-index ce97c5e..3df577b 100644
---- a/Makefile
-+++ b/Makefile
-@@ -49,7 +49,7 @@ ifneq (,$(wildcard /usr/local/opt/openssl/.))
-   OPENSSLLIB=-L/usr/local/opt/openssl/lib
- endif
- 
--RM=rm -f
-+RM=rm -rf
- ifneq ($(UNAME),FreeBSD)
- CC=gcc
- CXX=g++
-@@ -475,7 +475,9 @@ osxpackage:
+@@ -489,7 +489,9 @@ osxpackage:
  	$(MAKE) $(BIN)/urbit LIB=/usr/local/lib/urb STATIC=yes
  	mkdir -p inst/usr/local/lib/urb inst/usr/local/bin
  	cp $(BIN)/urbit inst/usr/local/bin
@@ -79,7 +22,7 @@ index ce97c5e..3df577b 100644
  	pkgbuild --root inst --identifier org.urbit.urbit --version 0.2 urbit.pkg
  
  debbuild:
-@@ -484,11 +486,13 @@ debbuild:
+@@ -498,11 +500,13 @@ debbuild:
  debinstall:
  	mkdir -p $(DESTDIR)/usr/bin $(DESTDIR)/usr/share/urb
  	install -m755 $(BIN)/urbit $(DESTDIR)/usr/bin
@@ -95,16 +38,16 @@ index ce97c5e..3df577b 100644
  
  # 'make distclean all -jn' ∀ n>1 still does not work because it is possible
  # Make will attempt to build urbit while it is also cleaning urbit..
-diff --git a/include/noun/allocate.h b/include/noun/allocate.h
-index 7ab6b21..4a1310e 100644
---- a/include/noun/allocate.h
-+++ b/include/noun/allocate.h
-@@ -23,7 +23,7 @@
+diff --git a/include/c/portable.h b/include/c/portable.h
+index 7ed2db6..5e3bfcb 100644
+--- a/include/c/portable.h
++++ b/include/c/portable.h
+@@ -74,7 +74,7 @@
    **/
-     /* u3a_bits: number of bits in word-addressed pointer.  29 == 2GB.
-     */
--#     define u3a_bits  29
-+#     define u3a_bits  28
- 
-     /* u3a_page: number of bits in word-addressed page.  12 == 16Kbyte page.
-     */
+ # if defined(U3_OS_linux)
+ #   define U3_OS_LoomBase 0x36000000
+-#   define U3_OS_LoomBits 29            //  ie, 2^29 words == 2GB
++#   define U3_OS_LoomBits 28            //  ie, 2^28 words == 1GB
+ # elif defined(U3_OS_osx)
+ #   ifdef __LP64__
+ #     define U3_OS_LoomBase 0x200000000
