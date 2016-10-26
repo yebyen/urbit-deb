@@ -3,18 +3,18 @@ Source: urbit
 Binary: urbit
 Architecture: any
 Version: 0.2-1
-Maintainer: Urbit <urbit@urbit.org>
-Homepage: http://urbit.org/
-Standards-Version: 3.9.3
-Build-Depends: debhelper (>= 8.0.0), libssl-dev, libncurses5-dev, libgmp-dev, libsigsegv-dev, ragel, cmake, libtool, autoconf
+Maintainer: Kingdon <yebyen@gmail.com>
+Homepage: http://urbit.org
+Standards-Version: 3.9.7
+Build-Depends: debhelper (>= 8.0.0), libssl-dev, libncurses5-dev, libgmp-dev, libsigsegv-dev, ragel, cmake, libtool, autoconf, libcurl4-gnutls-dev | libcurl4-openssl-dev
 Package-List:
- urbit deb unknown extra arch=any
+ urbit deb base extra arch=any
 Checksums-Sha1:
- a0ea0bab6ee7e3e28b19fa26a94f429f5f26d7b1 6682116 urbit_0.2.orig.tar.xz
- 7a448b256209d9180cab7238e0e2e1cec1615a19 1100 urbit_0.2-1.debian.tar.xz
+ bff2550e753e9d7b55c751c1bcf412fbcc9b2500 3535064 urbit_0.2.orig.tar.xz
+ 20938cfe767b3cbf8982e94770c1cc5d61c313ec 24884 urbit_0.2-1.debian.tar.xz
 Checksums-Sha256:
- f40e96d8f9bd4a4b7a5f9ab9f5360799cd50f832ec019fc6cb2bc8722702ed81 6682116 urbit_0.2.orig.tar.xz
- e4124a98407eb6bd33dbe5a6efbab1f3c0f98bee6626958f15358e4d504c047a 1100 urbit_0.2-1.debian.tar.xz
+ c1a37db7a0a06e9e52e28a1f50648bfe71d2a0b442e07f8de9b694dcf4cb0a55 3535064 urbit_0.2.orig.tar.xz
+ f909c916c4932cf4aeccc3889af746631ef15c1b2a649b886b50df299909b3ee 24884 urbit_0.2-1.debian.tar.xz
 Files:
- cbc6e0183b278bd74649a2fcdf8069bd 6682116 urbit_0.2.orig.tar.xz
- d2b098a889ebb9d7b50070135c29c026 1100 urbit_0.2-1.debian.tar.xz
+ 02c789683dcafcd5678ea5b6cbc47eed 3535064 urbit_0.2.orig.tar.xz
+ 5b7c0c4dfb9b071db0c12aa10a6affb5 24884 urbit_0.2-1.debian.tar.xz

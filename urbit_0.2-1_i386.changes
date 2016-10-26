@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Wed, 26 Oct 2016 12:45:37 -0400
+Source: urbit
+Binary: urbit
+Architecture: source i386
+Version: 0.2-1
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: Kingdon <yebyen@gmail.com>
+Changed-By: Kingdon <yebyen@gmail.com>
+Description:
+ urbit      - auto-generated package by debmake
+Changes:
+ urbit (0.2-1) UNRELEASED; urgency=low
+ .
+   * from mars
+     from the future
+ .
+   * not endorsed by zombies
+Checksums-Sha1:
+ 2c6ddedad0450e6912090e4c9194f117e17eb5ef 898 urbit_0.2-1.dsc
+ bff2550e753e9d7b55c751c1bcf412fbcc9b2500 3535064 urbit_0.2.orig.tar.xz
+ 20938cfe767b3cbf8982e94770c1cc5d61c313ec 24884 urbit_0.2-1.debian.tar.xz
+ 842350069ad9330d94f85a8e08dda3b59f89fc4c 25170 urbit_0.2-1_i386.deb
+Checksums-Sha256:
+ ece13a106873e08499c0de6108583014e6ee162aebda30524c7e60267c7ea91d 898 urbit_0.2-1.dsc
+ c1a37db7a0a06e9e52e28a1f50648bfe71d2a0b442e07f8de9b694dcf4cb0a55 3535064 urbit_0.2.orig.tar.xz
+ f909c916c4932cf4aeccc3889af746631ef15c1b2a649b886b50df299909b3ee 24884 urbit_0.2-1.debian.tar.xz
+ 7d5fa78ca90c3dd1e3bb0d6db16d85d7131c5f5b5ac1291c360a09bfa83fa85d 25170 urbit_0.2-1_i386.deb
+Files:
+ 69308e9de78224559ebfe80ce19529d7 898 base extra urbit_0.2-1.dsc
+ 02c789683dcafcd5678ea5b6cbc47eed 3535064 base extra urbit_0.2.orig.tar.xz
+ 5b7c0c4dfb9b071db0c12aa10a6affb5 24884 base extra urbit_0.2-1.debian.tar.xz
+ 8fecc0e55371ee717af5e914a266623e 25170 base extra urbit_0.2-1_i386.deb
